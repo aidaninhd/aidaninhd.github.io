@@ -24,7 +24,7 @@ header {
     min-height: 200px !important;
     padding: 20px 0; /* Adds vertical padding for spacing */
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(54, 54, 54, 0.233); /* Adds a semi-transparent black background */
+    background-color: rgba(54, 54, 54, 0.377); /* Adds a semi-transparent black background */
     border-radius: 25px;
     border-bottom: 3px solid #00c8ff; /* Creates a bottom border in blue for separation */
 }
@@ -94,7 +94,7 @@ main {
     padding: 30px; /* Adds padding inside main container */
     max-width: 1000px; /* Limits the main content width */
     margin: 0 auto; /* Centers the main content block */
-    background-color: rgba(54, 54, 54, 0.233); /* Adds a semi-transparent black background */
+    background-color: rgba(54, 54, 54, 0.377); /* Adds a semi-transparent black background */
     border-radius: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Adds shadow for a "floating" effect */
 }
@@ -150,7 +150,7 @@ font-family: 'Courier New', Courier, monospace;;
 /* Footer */
 footer {
     margin-top: 40px; /* Adds space between the main content and footer */
-    background-color: rgba(0, 0, 0, 0.8); /* Sets a semi-transparent background */
+    background-color: rgba(54, 54, 54, 0.486); /* Sets a semi-transparent background */
     padding: 20px; /* Adds padding inside the footer */
     text-align: center; /* Centers footer content */
     border-top: 3px solid #00c8ff; /* Adds a top border in blue */
