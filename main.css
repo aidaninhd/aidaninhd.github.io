@@ -16,7 +16,7 @@ body {
     background-attachment: fixed; /* Locks the background in place while scrolling */
     background-repeat: repeat; /* Makes background repeat */
     background-position: center; /* Centers the background */
-    padding: 20px; /* Adds some padding to the body */
+    padding: 30px; /* Adds some padding to the body */
 }
 
 /* Header */
@@ -24,7 +24,8 @@ header {
     min-height: 200px !important;
     padding: 20px 0; /* Adds vertical padding for spacing */
     font-family: 'Times New Roman', serif;
-    background-color: rgba(0, 0, 0, 0.8); /* Adds a semi-transparent black background */
+    background-color: rgba(54, 54, 54, 0.233); /* Adds a semi-transparent black background */
+    border-radius: 25px;
     border-bottom: 3px solid #00c8ff; /* Creates a bottom border in blue for separation */
 }
 
@@ -33,7 +34,7 @@ header h1 {
     font-size: 3em; /* Sets the size of the main title */
     font-family: 'Times New Roman', serif;
     color: #00c8ff; /* Sets the title color to blue */
-    margin-bottom: 80px; /* Adds space between title and navigation */
+    padding: 0px; /* Adds space between title and navigation */
 }
 
 /* Navigation Menu */
@@ -42,17 +43,15 @@ nav ul {
     list-style: none; /* Removes bullets from list items */
     font-family: 'Courier New', Courier, monospace;
     display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Centers the navigation items */
     padding: 0; /* Removes extra padding from list */
 }
 
 nav ul li {
-    margin: 0 px; /* Adds space between each navigation item */
     margin-top: 150px;
 }
 
 nav ul li a {
-    float: right;
+
     text-decoration: none; /* Removes the underline from links */
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2em; /* Increases font size for links */
@@ -86,19 +85,24 @@ nav ul li a:after {
     margin-bottom: 50px; /* Adds space between title and navigation */
 }
 
+.recyclingimage {
+    float: right;
+}
+
 /* Main Content */
 main {
     text-align: center; /* Centers text in main content */
-    padding: 20px; /* Adds padding inside main container */
+    padding: 30px; /* Adds padding inside main container */
     max-width: 1000px; /* Limits the main content width */
     margin: 0 auto; /* Centers the main content block */
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a transparent background to main section */
-    border-radius: 10px; /* Rounds the corners of the main content */
+    background-color: rgba(54, 54, 54, 0.233); /* Adds a semi-transparent black background */
+    border-radius: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Adds shadow for a "floating" effect */
 }
 
 p {
     font-size: 1.2em;
+    padding: 10px;
 }
 
 /* Welcome Section */
@@ -109,7 +113,12 @@ h2 {
     color: #00c8ff; /* Sets title color to blue */
 }
 
-/* Image Section with Float */
+.recyclingtext {
+    float: left;
+    width: 60%;
+    padding-bottom: 75px;
+}
+/* Images on homepage */
 
 .row {
     display: flex;
@@ -128,11 +137,12 @@ font-family: 'Courier New', Courier, monospace;;
 
   .overview {
     display: flex;
+    padding: 20px;
   }
  
-  .overview1 
+  .overview1 {
   flex: 50%;
-  padding: 5px;
+  padding: 20px;
 }
   
 /* Footer */
@@ -149,3 +159,8 @@ footer p {
     color: white; /* Keeps text white */
 }
 
+
+/* Ensure input text color is black */
+input[type="text"], input[type="number"], input[type="password"], input[type="email"], select {
+    color: black;
+}

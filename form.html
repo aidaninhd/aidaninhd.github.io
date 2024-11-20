@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +7,6 @@
     <title>The CRT Collective - Questionnaire</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWYBGTER45"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MWYBGTER45');
-</script>
 <body>
     <header>
         <div class="crt-banner">
@@ -23,11 +15,11 @@
         </div>
         <nav>
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="recycling.html">Recycling</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="trinitron.html">Trinitron</a></li>
-            <li><a href="form.html">Form</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recycling.html">Recycling</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="trinitron.html">Trinitron</a></li>
+                <li><a href="form.html">Form</a></li>
             </ul>
         </nav>
     </header>
@@ -42,8 +34,12 @@
                 </p>
                 
                 <p>
-                    2. How did you dispose of it? (Recycled, Donated, Thrown Away)<br>
-                    <input type="text" name="disposal_method" placeholder="Enter disposal method">
+                    2. How did you dispose of it?<br>
+                    <select name="disposal_method">
+                        <option value="Recycled">Recycled</option>
+                        <option value="Donated">Donated</option>
+                        <option value="Thrown Away">Thrown Away</option>
+                    </select>
                 </p>
                 
                 <p>
@@ -52,8 +48,12 @@
                 </p>
                 
                 <p>
-                    4. Why did you stop using your CRT TV? (Upgrade, Broken, Other)<br>
-                    <input type="text" name="reason" placeholder="Enter reason">
+                    4. Why did you stop using your CRT TV?<br>
+                    <select name="reason">
+                        <option value="Upgrade">Upgrade</option>
+                        <option value="Broken">Broken</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </p>
                 
                 <p>
@@ -67,5 +67,6 @@
         <p>Aidan Johnson, 2024<br>
         Contact: <a href="mailto:email123@gmail.com">email123@gmail.com</a></p>
     </footer>
+    <script src="crt_validation.js"></script>
 </body>
 </html>
