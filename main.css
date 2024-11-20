@@ -107,7 +107,10 @@ p {
 /* Welcome Section */
 h2 {
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     font-size: 2.5em; /* Sets the size for the section title */
+    margin-top: 30px; /* Adds space below the title */
     margin-bottom: 30px; /* Adds space below the title */
     color: #00c8ff; /* Sets title color to blue */
 }
