@@ -30,6 +30,15 @@ header {
 }
 
 /* Header Title */
+
+header {
+    display: flex;
+    justify-content: space-between; /* Adjust the spacing between elements */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+}
+
 header h1 {
     font-size: 3em; /* Sets the size of the main title */
     font-family: 'Courier New', Courier, monospace;
@@ -39,16 +48,18 @@ header h1 {
 }
 
 /* Navigation Menu */
+
+header nav {
+    flex: 1; /* Allow the navigation to take up remaining space */
+    text-align: right; /* Align navigation to the right */
+}
+
 nav ul {
     float: right;
     list-style: none; /* Removes bullets from list items */
     font-family: 'Courier New', Courier, monospace;
     display: flex; /* Flexbox for horizontal layout */
     padding: 0; /* Removes extra padding from list */
-}
-
-nav ul li {
-    margin-top: 150px;
 }
 
 nav ul li a {
@@ -165,3 +176,32 @@ footer p {
 input[type="text"], input[type="number"], input[type="password"], input[type="email"], select {
     color: black;
 }
+
+@media (min-width: 1200px) {
+nav ul li {
+    margin-top: 150px;
+}
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* Adjust layout for small viewports */
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align content */
+    }
+
+    header nav {
+        text-align: center; /* Center the navigation links */
+        margin-top: 10px; /* Add spacing between sections */
+    }
