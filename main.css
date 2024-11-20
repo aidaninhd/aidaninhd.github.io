@@ -164,7 +164,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="em
     color: black;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 nav ul li {
     margin-top: 150px;
 }
@@ -180,6 +180,7 @@ nav ul li {
         height: auto;
     }
     header {
+        font-size: 12px;
         display: flex;
         justify-content: space-between; /* Adjust the spacing between elements */
         align-items: center; /* Center items vertically */
@@ -190,10 +191,13 @@ nav ul li {
         flex: 1; /* Allow the navigation to take up remaining space */
         text-align: right; /* Align navigation to the right */
     }
+    nav ul li {
+        margin-top: 0px;
+    }
     /* Adjust layout for small viewports */
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1300px) and (min-width: 768px) {
     header {
         flex-direction: column; /* Stack elements vertically */
         align-items: center; /* Center align content */
@@ -202,5 +206,9 @@ nav ul li {
     header nav {
         text-align: center; /* Center the navigation links */
         margin-top: 10px; /* Add spacing between sections */
+    }
+
+    nav ul li {
+        margin-top: 0px;
     }
 
